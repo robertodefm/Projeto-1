@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-image:url("../contatos/images/pattern-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40%;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.search{
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    height: 40px;
+    width: 350px;
+    margin-right: 0;
+    transform: none;
+    box-shadow: none;
+    border: 0;
+
+}
+
+button{
+    height: 40px;
+    width: 40px;
+    margin-left: 0;
+    color: white;
+    background-color: rgb(58, 58, 58);
+    font-weight: bold;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transform: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.box_search{
+    display: flex;
+    gap: 0;
+}
+
+.image{
+    background-image: url("https://img.freepik.com/vetores-premium/mapa-da-cidade-ruas-da-cidade-com-parque-e-rio-plano-de-navegacao-gps-para-o-centro-transporte-urbano-abstrato_163786-697.jpg?w=2000");
+    width: 100%;
+    height: 100%;
+}
+
+.information{
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+    bottom: 0;
+    margin-inline: auto;
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: 10px;
+}
+
+.line{
+    background-color:lightgray;
+    height: 30%;
+    width: 1px;
+}
+
+span{
+    color: rgb(170, 169, 169);
+    font-weight: bold;
+    font-size: small;
+}
+
+h4{
+    font-weight: bold;
+    font-size: large;
+}
+
+@media (max-width: 600px){
+    .information{
+        flex-direction: column;
+        height: auto;
+    }
+    .line{
+        width: 0;
+        height: 0;
+    }
+    main{
+        
+        overflow: hidden;
+    }
+    .search{
+        width: 19.5em;
+    }
+
+}

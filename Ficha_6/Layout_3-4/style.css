@@ -1,0 +1,94 @@
+
+.main{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card{
+    background-color: white;
+    padding: 20px;
+    font-size: 10px;
+    box-shadow: 10px 10px 13px -6px rgba(0,0,0,0.75);
+}
+.curva{
+    background-image: url("bg-curve-desktop.svg");
+    height: 50px;
+    width: 100%;
+    background-position: top;
+}
+.card-header{
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+    padding-top: 1.4rem;
+
+}
+.header-job{
+    font-size: 0.7rem;
+    opacity: 0.5;
+}
+.destaque{
+    background-color: hsl(240, 75%, 98%);
+}
+
+.early-access{
+    color: white;
+    background-color: hsl(238,22%,44%);
+}
+.footer{
+    color: white;
+    background-color: hsl(243,87%,12%);
+}
+.footer-logo{
+    width: 100px;
+    height: 40px;
+    filter: brightness(0) invert();
+    
+}
+section{
+    display: flex;
+    padding: 50px 10px;
+    gap: 20px;
+}
+.logo{
+    width: 100px;
+}
+article{
+    width: 100%;
+    min-width: 50%;
+}
+.img-macaca{
+    width: 100%;
+    min-width: 50%;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button{
+    background-color:royalblue;
+    color:white;
+    padding-inline: 2em;
+    font-weight:lighter;
+}
+
+@media (max-width: 500px){
+    section{
+        flex-direction: column-reverse;
+    }
+    button, input{
+        width: 100%;
+    }
+}

@@ -1,0 +1,49 @@
+.header1{
+    position: relative;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+.header1 .com-imagem,
+.header1 .sem-imagem{
+    position: relative;
+    width: 50%;
+    background: #1b335f;
+    overflow: hidden;
+}
+.header1 .com-imagem{
+    background: url(https://you-print.pt/img/DOCS/Login.PNG);
+    background-size: cover;
+}
+
+.header1 .com-imagem h2,
+.header1 .sem-imagem h2{
+    position: absolute;
+    line-height: 100vh;
+    white-space: nowrap;
+    font-size: 12em;
+}
+
+.header1 .com-imagem h2{
+    color: transparent;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: #fff;
+    left: 100%;
+    animation: animate-text 60s linear infinite;
+}
+
+.header1 .sem-imagem h2{
+    color: #fff;
+    animation: animate-text 60s linear infinite;
+}
+
+@keyframes animate-text{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}

@@ -1,0 +1,206 @@
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+p{
+    font-weight: bold;
+    font-size:x-large;
+    margin-bottom: 5px;
+}
+.flex-container{
+    display: flex;
+    background-color: lightgray;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+    padding: 15px;
+    margin-top: 0;
+}
+
+.flex-item{
+    width: 50px;
+    height: 50px;
+    border-radius: 25%;
+}
+
+.verde{
+    background-color: green;
+}
+
+.amarelo{
+    background-color: yellow;
+}
+
+.vermelho{
+    background-color: red;
+}
+
+.box1{
+    flex-direction:row-reverse;
+}
+
+.box2{
+    justify-content: center;
+}
+
+.box3{
+    justify-content:space-around;
+}
+
+.box4{
+    justify-content: space-between;
+}
+
+.box5{
+    align-items: flex-end;
+}
+
+.box6{
+    align-items: center;
+    justify-content: center;
+}
+
+.box7{
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.box8{
+    flex-direction: row-reverse;
+}
+
+.box9{
+    flex-direction:column;
+}
+
+.box10{
+    flex-direction:row-reverse;
+    justify-content: left;
+}
+
+.box11{
+    flex-direction: column;
+    justify-content: end;
+}
+
+.box12{
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.box13{
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    justify-content: center;
+    
+}
+
+.box14 .amarelo{
+    order:1;
+}
+
+.two_cards{
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+
+.box1_2 .vermelho{
+    
+    order:-1;
+}
+
+.box2_2 .amarelo{
+    align-self: flex-end;
+}
+
+.box3_2 .amarelo{
+    order: 2;
+    align-self: flex-end;
+    
+}
+
+.box4_2{
+    flex-direction: column;
+}
+
+
+.solution1 {
+   display: flex;
+
+}
+
+.solution2{
+    display: flex;
+    margin-block: auto;
+    
+}
+
+
+.box5_2{
+    gap: 40px;
+}
+
+.box5_2:nth-child(){
+    flex-direction: column;
+    
+}
+
+
+
+.box6_2{
+    display: flex;
+    flex-direction: column;
+}
+
+.box6_2 .box_amarelo, .box6_2 .box_verde, .box6_2 .box_vermelho{
+    display: flex;
+}
+
+.box6_2 .amarelo, .box6_2 .verde, .box6_2 .vermelho {
+    width: 100%;
+
+}
+
+
+.box7_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.box7_2 .box_amarelo, .box7_2 .box_verde, .box7_2 .box_vermelho{
+    display: flex;
+    
+}
+
+.box7_2 .amarelo, .box7_2 .verde, .box7_2 .vermelho {
+    width: 100%;
+
+}
+
+.box8_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box8_2 .box_amarelo, .box8_2 .box_verde, .box8_2 .box_vermelho{
+    display: flex;
+    
+}
+
+.box9_2{
+    justify-content: space-between;
+}
+
+.box9_2 .box_amarelo{
+    margin-block: auto;
+}
+
+.box9_2 .box_verde_vermelho{
+    margin-block: auto;
+}

@@ -1,0 +1,99 @@
+html,body{
+    background-color: black;
+}
+
+section{
+   
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    gap: 30px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+header{
+    
+    display: flex;
+    align-items: center;
+    gap:10px;
+    font-size: large;
+    margin-left: 1em;
+    
+}
+.logo{
+    
+    font-size: 30px;
+    transform:scaleX(-1);
+    
+}
+
+button{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+button:hover{
+    background-color: blueviolet;
+    color: black;
+    border: solid 2px blueviolet;
+
+}
+
+
+
+main{
+    width: 100%;
+    height: 95vh;
+    
+    border: solid 2px blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    position: relative;
+    background-image: url(https://portalsalud.global/wp-content/uploads/2022/12/perro-solo-en-casa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.content{
+    
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    
+    padding: 20px;
+    
+}
+
+
+p{
+    line-height: 30px;
+    font-weight:500;
+}
+article{
+    
+    font-size: large;
+    text-align: center;
+    padding-inline: 5em;
+    margin-bottom: 1em;
+}
+.imagem{
+    height: 100%;
+    width: 45%;
+    object-fit: cover;
+}
+
+.imagem img{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+button{
+    width: 160px;
+    height: 60px;
+    font-size: large;
+}

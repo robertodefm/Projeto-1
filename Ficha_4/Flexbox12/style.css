@@ -1,0 +1,88 @@
+html,body{
+    background-color: black;
+}
+
+section{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 3em;
+    top: 0;
+    bottom: 0;
+    margin-top: 1em;
+    height: 80vh;
+}
+
+header{
+    
+    display: flex;
+    align-items: center;
+    gap:10px;
+    font-size: large;
+    margin-left: 2em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    
+}
+.logo{
+    
+    font-size: 40px;
+    transform:scaleX(-1);
+    
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 95vh;
+    background-color: black;
+    border: solid 2px blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    color:blueviolet;
+    overflow: hidden;
+}
+
+
+p{
+    line-height: 30px;
+    margin-bottom: 2em;
+}
+
+article{
+    display: flex;
+    width: 45%;
+    align-items: flex-end;
+    padding-inline: 5em;
+
+    text-align:left;
+}
+
+.title{
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    background-image: url(https://estaticos.muyinteresante.es/uploads/images/gallery/6124cf315cafe8c3101f8bab/perro_redes.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:right;
+    width: 80vh;
+    height: 77vh;
+}
+
+.container{
+    display: flex;
+    margin-left: 33%;
+    align-items: flex-end;
+    
+}

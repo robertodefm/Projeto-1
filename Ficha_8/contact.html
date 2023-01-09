@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3a0a598fbd.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light bg-light px-0">
+                <a class="navbar-brand" href="#">
+                    <h1>
+                        <span class="cor-principal">UMa</span>
+                        Cantina
+                    </h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="divider py-2 d-none d-md-block cor-principal">/</li>
+                        <li class="nav-item">
+                            <a href="menu.html" class="nav-link">Menu</a>
+                        </li>
+                        <li class="divider py-2 d-none d-md-block cor-principal">/</li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">Acerca</a>
+                        </li>
+                        <li class="divider py-2 d-none d-md-block cor-principal">/</li>
+                        <li class="nav-item pe-3">
+                            <a href="contact.html" class="nav-link">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                                data-bs-target="#reservationmodal">
+                                Reservas
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </div>
+    </header>
+
+    <section>
+        <div class="container mt-4">
+            <div class="row public-banner d-none d-md-flex px-0">
+                <img class="object-fit-cover mb-4" src="https://www.athensguide.com/driving/google-maps.png" width="964"
+                    height="311" alt="UMa Cantina Banner">
+            </div>
+            <div class="row mb-5 text-center mt-5">
+                <div class="col-4">
+                    <h5 class="text-danger">Hours</h5>
+                    <p class="px-3">Open 7 days a week <br>12pm to 9am</p>
+                </div>
+                <div class="col-4">
+                    <h5 class="text-danger">Location</h5>
+                    <p class="px-3">1234 Street Name<br>Vancouver. BC <br>604.123.1234</p>
+                </div>
+                <div class="col-4">
+                    <h5 class="text-danger">Reservations</h5>
+                    <p class="px-3">For reservations. <br>please call <br>604.123.1234 24 hours <br>notice required to <br>cancel a reservation.</p>
+                </div>
+            </div>
+
+            <footer>
+                <div class="container px-0">
+                <div class="col-lg-12 text-center">
+                <h3>UMa Cantina</h1>
+                <br>
+                <br>
+                <p>Rua de Santa Maria, nº 253 / Funchal / 291.123.123</p>
+                <p>Horário: De 2ª a 6ª e Sábado das 09:00 às 14:00</p>
+                <br>
+                <div class="social-media">
+                <a href="#">
+                <i class="fa fa-facebook"></i>
+                </a>
+               <a href="#">
+                <i class="fa fa-twitter"></i>
+                </a>
+               <a href="#">
+                <i class="fa fa-pinterest"></i>
+                </a>
+               <a href="#">
+                <i class="fa fa-instagram"></i>
+                </a>
+                </div>
+                <br>
+                <p>&copy; 2017 Universidade da Madeira</p>
+                </div>
+                </div>
+                </footer>
+        </div>
+    </section>
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="reservationmodal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title cor-principal">Reserva</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" arialabel="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label>Nome</label>
+                            <input type="text" class="form-control" placeholder="Insira o nome do titular da reserva">
+                        </div>
+                        <div class="form-group">
+                            <label>Data</label>
+                            <input type="text" class="form-control" placeholder="Insira a data pretendida">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger">Reservar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
